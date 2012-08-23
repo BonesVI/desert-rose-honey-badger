@@ -1,15 +1,13 @@
-
+require 'item.rb'
 class ItemsController < ApplicationController
 	attr_accessor :item
 
 	def index
-		@item = Item.all
 	end
 	def show
 
 	end
 	def new
-		@item = Item.new
 	end
 	def create
 

@@ -9,6 +9,6 @@ Scenario: Put Item for Sale
 	And I fill in "Name" with "My Cool Hat"
 	And I fill in "Price" with "20"	
 	And I fill in "Description" with "My baller jay hat."
-	And I fill in "Minimum Bid" with "2"
+	And I fill in "Bid" with "2"
 	And I press "Put up for Sale"
 	Then I should see "Item is now for Sale"
