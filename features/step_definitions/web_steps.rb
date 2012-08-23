@@ -7,7 +7,11 @@ When /^(?:|I) follow "(.*?)"$/ do |link_text|
 end 
 
 When /^(?:|I) fill in "(.*?)" with "(.*?)"$/ do |field, value|
+	if field == "Minbid"
+		field = "Minimum Bid"
+	end
 	fill_in field, :with => value
+
 
 end
 

@@ -10,7 +10,8 @@ class ItemsController < ApplicationController
 	def new
 	end
 	def create
-
+		@item = Item.new(params[:item])
+		@item.save
 		redirect_to :action => "index"
 	end
 	def update

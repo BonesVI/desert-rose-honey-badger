@@ -4,7 +4,7 @@ class CreateItems < ActiveRecord::Migration
       t.string :name
       t.decimal :price
       t.text :description
-      t.decimal :bid
+      t.decimal :minbid
 
       t.timestamps
     end
