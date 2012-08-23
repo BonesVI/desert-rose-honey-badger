@@ -1,0 +1,19 @@
+<%= form_for(@item) do |f|%>
+<p>
+	<%=f.label :name%>
+	<%=f.text_field :name, :size => 20%>
+</p>
+<p>
+	<%=f.label :price%>
+	<%=f.text_field :price, :size => 5%>
+</p>
+<p>
+	<%=f.label :minimum_bid%>
+	<%=f.text_field :minimum_bid, :size => 5 %>
+</p>
+<p>
+	<%=f.label :description%>
+	<%=f.text_area :desription, :rows => 10, :cols => 20%>
+</p>
+<p><%=f.submit%></p>
+<%end%>

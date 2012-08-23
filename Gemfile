@@ -7,6 +7,7 @@ gem 'rails', '3.2.1'
 
 gem 'sqlite3'
 
+gem 'win32console'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -34,6 +35,8 @@ group :test do
 	gem 'cucumber-rails'
 	gem 'capybara'
 	gem 'database_cleaner'
+	gem 'factory_girl_rails'
+	gem 'spork', '0.9.0.rc9'
 end
 
 
