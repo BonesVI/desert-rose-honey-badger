@@ -1,0 +1,36 @@
+<h2>Item is now for Sale</h2>
+
+<table>
+<caption>Details</caption>
+	<tr>
+		<td>
+			Name
+		</td>
+		<td>
+			<%= @item.name %>
+		</td>
+		
+	</tr>
+		<td>
+			Price($)
+		</td>
+		<td>
+			<%= @item.price %>
+		</td>
+	<tr>
+		<td>
+			Minimum Bid($)
+		</td>
+		<td>
+			<%= @item.minbid  %>
+		</td>
+	</tr>
+	<tr>
+		<td>Description</td>
+		<td>
+			<%= @item.description %>
+		</td>
+	</tr>
+	<p>Confirm</p>
+	<%= link_to 'Make a Change', edit_item_path %>
+<%= link_to 'Another Item', new_item_path %>

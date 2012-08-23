@@ -11,8 +11,6 @@ When /^(?:|I) fill in "(.*?)" with "(.*?)"$/ do |field, value|
 		field = "Minimum Bid"
 	end
 	fill_in field, :with => value
-
-
 end
 
 When /^(?:|I) press "(.*?)"$/ do |button|
@@ -20,7 +18,7 @@ When /^(?:|I) press "(.*?)"$/ do |button|
 end
 
 Then /^(?:|I) should see "(.*?)"$/ do |message|
-	if page.has_content?('Item is now for sale')
+	if page.has_content?(message)
 		assert true
 	else
 		assert false

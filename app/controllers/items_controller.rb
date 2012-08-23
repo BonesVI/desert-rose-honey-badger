@@ -5,14 +5,17 @@ class ItemsController < ApplicationController
 	def index
 	end
 	def show
-
+		@item = Item.find(params[:id])
 	end
 	def new
 	end
 	def create
 		@item = Item.new(params[:item])
-		@item.save
-		redirect_to :action => "index"
+		if @item.save
+			id = @item.id.to_i
+			redirect_to item_path(id)
+		end
+		
 	end
 	def update
 
