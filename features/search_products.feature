@@ -12,12 +12,12 @@ Scenario: Put Item for Sale
 	And I fill in "Minbid" with "2"
 	And I press "Put up for Sale"
 
+	#need to add something to ask for confirmation
 	#this confirms whether or not the post has been made properly by showing details
 	Then I should see "Item is now for Sale"
 	And I should see "My Cool Hat"
 	And I should see "20"
 	And I should see "My baller jay hat"
 	And I should see "2"
-	And I should see "Another Item"
-	And I should see "Confirm"
-	And I should see "Make a Change"
+	And I should see "Post Another Item"
+	And I should see "Return to Home"

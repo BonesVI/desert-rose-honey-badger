@@ -31,6 +31,5 @@
 			<%= @item.description %>
 		</td>
 	</tr>
-	<p>Confirm</p>
-	<%= link_to 'Make a Change', edit_item_path %>
-<%= link_to 'Another Item', new_item_path %>
+	<% link_to 'Return Home', :controller => "home", :action => "index", :class => "button" %>
+	<%= link_to 'Post Another Item', new_item_path, :class => "button" %>

@@ -8,6 +8,7 @@ class ItemsController < ApplicationController
 		@item = Item.find(params[:id])
 	end
 	def new
+
 	end
 	def create
 		@item = Item.new(params[:item])
@@ -18,7 +19,7 @@ class ItemsController < ApplicationController
 		
 	end
 	def update
-
+		@item = Item.find(params[:id])
 	end
 	def destroy
 
