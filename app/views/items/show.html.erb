@@ -31,5 +31,8 @@
 			<%= @item.description %>
 		</td>
 	</tr>
-	<% link_to 'Return Home', :controller => "home", :action => "index", :class => "button" %>
+</table>
+
+	<%= link_to 'Return Home', :controller => "home", :action => "index", :class => "button" %>
+	<%= link_to 'Manage Items', items_path, :class => "button" %>
 	<%= link_to 'Post Another Item', new_item_path, :class => "button" %>

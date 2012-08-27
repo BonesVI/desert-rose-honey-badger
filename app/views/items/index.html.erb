@@ -1,0 +1,27 @@
+<table>
+	<tr>
+	<th>
+		Name
+	</th>
+	<th>
+		Edit this item
+	</th>
+	<th>
+		Delete this item
+	</th>
+</tr>
+<% @items.each do |item| %>
+<tr>
+	<td>
+		<%= item.name %>
+	</td>
+	<td>
+		<%= link_to "Edit", edit_item_path(item) %>
+	</td>
+	<td>		
+		<%= link_to "Delete", item, method: :delete, :confirm  => "Are you sure?"%>
+	</td>
+</tr>
+<%end%>
+</table>
+<%= link_to "Create another item", new_item_path %>
