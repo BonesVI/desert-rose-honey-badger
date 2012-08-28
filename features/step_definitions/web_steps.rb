@@ -24,3 +24,11 @@ Then /^(?:|I) should see "(.*?)"$/ do |message|
 		assert false
 	end
 end
+
+Then /^(?:|I) should not see "(.*?)"$/ do |message|
+	unless page.has_content?(message)
+		assert true
+	else
+		assert false
+	end
+end

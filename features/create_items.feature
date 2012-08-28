@@ -10,7 +10,7 @@ Scenario: Put Item for Sale
 	And I fill in "Price" with "20"	
 	And I fill in "Description" with "My baller jay hat."
 	And I fill in "Minbid" with "2"
-	And I press "Put up for Sale"
+	And I press "Create Item"
 	#this confirms whether or not the post has been made properly by showing details
 	Then I should see "Item is now for Sale"
 	And I should see "My Cool Hat"
@@ -18,4 +18,4 @@ Scenario: Put Item for Sale
 	And I should see "My baller jay hat"
 	And I should see "2"
 	And I should see "Post Another Item"
-	And I should see "Return to Home"
+	And I should see "Return Home"
