@@ -27,4 +27,12 @@ Scenario: Deleting an Item
 	And I follow "Delete My Hat"
 	Then I should not see "My Hat"
 
+Scenario: Names cannot be identical to current items for sale
+	And I follow "Create another item"
+	And I fill in "Name" with "My Hat"
+	And I fill in "Price" with "5"	
+	And I fill in "Description" with "My baller jay hat"
+	And I fill in "Minbid" with "2"
+	And I press "Create Item"
+	Then I should see "New Item"
 

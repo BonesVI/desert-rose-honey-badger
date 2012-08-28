@@ -27,7 +27,8 @@ class ItemsController < ApplicationController
 	def update 
 		@item = Item.find(params[:id])
 		if @item.update_attributes(params[:item])
-			redirect_to @item
+			@items = Item.all
+			render :action => "index"
 		else
 			render :action => "edit"
 		end

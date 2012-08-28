@@ -1,3 +1,4 @@
+<h2>Your Items</h2>
 <table>
 	<tr>
 	<th>
@@ -16,10 +17,10 @@
 		<%= item.name %>
 	</td>
 	<td>
-		<%= link_to "Edit", edit_item_path(item) %>
+		<%= link_to "Edit " + item.name, edit_item_path(item) %>
 	</td>
 	<td>		
-		<%= link_to "Delete", item, method: :delete, :confirm  => "Are you sure?"%>
+		<%= link_to "Delete " + item.name , item, method: :delete, :confirm  => "Are you sure?"%>
 	</td>
 </tr>
 <%end%>
